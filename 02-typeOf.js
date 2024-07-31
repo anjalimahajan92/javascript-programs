@@ -3,6 +3,7 @@ console.log("======1=====");
   var bankName;
   console.log("Bank name is  before initionalization",bankName);
   var bankName="SBI Bank";
+  console.log("Bank name",bankName);
   var bankNameTypeOf=typeof bankName;
 console.log("Type of bank name is after initionalization",bankNameTypeOf);
 // ==============2=========//
