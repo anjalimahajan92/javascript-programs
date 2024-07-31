@@ -1,0 +1,10 @@
+var firstName="my name is anjali mahajan";
+console.log(firstName);
+var cityname="my city name is jalgaon";
+console.log(cityname);
+var countryname="My country is India";
+console.log(countryname);
+var schoolname="My school name is prakash vidyalaya";
+console.log(schoolname);
+var collegename="My college name is J T mahajan college of engineering";
+console.log(collegename);
