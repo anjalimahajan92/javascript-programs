@@ -114,3 +114,44 @@ console.log(arrayNumbers8);
 console.log("Delete 3 elements starting from index4");
 const arrayList = arrayNumbers8.splice(4, 3)
 console.log(arrayNumbers8);
+
+
+console.log("============11 find all even position element  from array and it sum log on console=================");
+
+let arrayNumbers9 = [20, 31, 40, 25, 23, 11, 29, 9, 60, 2, 11];
+let add = 0;
+for (let index = 0; index < arrayNumbers9.length; index++) {
+    if (index % 2 == 0) {
+        const element = arrayNumbers9[index];
+        add = add + element;
+    }
+
+
+
+}
+console.log(`sum of all even numbers are :${add}`);
+
+
+console.log("===============12)find all odd position element  from array and it sum log on console=====================");
+
+
+let arrayNumbers10 = [20, 31, 40, 25, 23, 11, 29, 9, 60, 2, 11];
+let sumOdd=0;
+for (let index = 0; index < arrayNumbers10.length; index++) {
+  if (index%2==1) {
+    const keyElement= array[index];
+    sumOdd=sumOdd+keyElement;
+  }
+    
+    
+}
+console.log(`sum of all odd position numbers are ${sumOdd}`);
+
+console.log("=============13) find sum of array element log on console");
+
+let arrayNumbers11 = [20, 31, 40, 25, 23, 11, 29, 9, 60, 2, 11];
+sumElement = 0;
+for (const arrayElement of arrayNumbers11) {
+    sumElement = sumElement + arrayElement;
+}
+console.log(sumElement);
