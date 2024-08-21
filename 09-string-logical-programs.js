@@ -90,3 +90,75 @@ console.log(resultNew);
 
 let resultShow=show("Java");
 console.log(resultShow);
+
+
+console.log(` 7) Program to count character "a"":Define a function charCount() with one arguments
+    and call this function by passing below strings one by one.This function must return the char count.
+    Note:Count the both small case "a" or capital case "A" character`);
+
+
+    function  charCount(str) {
+        console.log(`String is ${str}`);
+        let count=0;
+      for (let index = 0; index < str.length; index++) {
+        const element = str[index];
+        if (str[index]=='a'|| str[index]=='A') {
+            count++;
+        }
+      }
+      return count;
+}
+  let result1= charCount("JavaScript");
+   console.log(`count the Character 'a' and 'A' in string is:${result1}`);
+   
+let string2= charCount("Do or Die");
+    console.log(`count the Character 'a' and 'A' in string is:${string2}`);
+ let str3   =charCount("Learn with us,Job with us");
+    console.log(`count the Character 'a' and 'A' in string is:${str3}`);
+  let str4=  charCount("Empowering Dreams,Guaranteeing futures");
+    console.log(`count the Character 'a' and 'A' in string is:${str4}`);
+ let str5  = charCount("Anny,My favorite fruit is Apple");
+    console.log(`count the Character 'a' and 'A' in string is:${str5}`);
+
+
+ console.log("==8)program to count vowel=========================================");
+
+
+const vowel = "aeiou";
+function vowelCount(para) {
+    let count = 0;
+    for (let index = 0; index < para.length; index++) {
+        let getCharacter = para.charAt(index);
+
+        if (vowel.includes(getCharacter)) {
+            count++;
+
+        }
+    }
+    return count;
+}
+const resultCount = vowelCount("JavaScript");
+console.log(`vowle count is:${resultCount}`);
+const result2 = vowelCount("HTML and CSS");
+console.log(`vowle count is:${result2}`);
+const result3 = vowelCount("Language of Internet")
+console.log(`vowle count is:${result3}`);
+const result4 = vowelCount("I am UI Developer");
+console.log(`vowle count is:${result4}`);
+const result5 = vowelCount("Do or Die")
+console.log(`vowle count is:${result5}`);
+
+
+console.log("==9)program to find length of word=================================================");
+
+
+function WordCount(word) {
+  let wordSplit = word.split(" ");
+let wordLength = wordSplit.length;
+console.log(`word of the length is ${wordLength}`);
+
+}
+WordCount("JavaScript The language of Internet");
+WordCount("Enhance your learning journey with Exclusive Add-ons");
+WordCount("Beyound frameworks,Beyound imagination");
+WordCount("I am passionate software developer")
