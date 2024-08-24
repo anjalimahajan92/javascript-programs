@@ -161,4 +161,28 @@ console.log(`word of the length is ${wordLength}`);
 WordCount("JavaScript The language of Internet");
 WordCount("Enhance your learning journey with Exclusive Add-ons");
 WordCount("Beyound frameworks,Beyound imagination");
-WordCount("I am passionate software developer")
+WordCount("I am passionate software developer");
+
+
+console.log("=====11)space count in string====");
+
+function spaceCount(key) {
+    console.log(key);
+    let counter = 0;
+    for (let index = 0; index < key.length; index++) {
+
+        let keyChar = key.charAt(index);
+        if (keyChar == " ") {
+            counter++;
+        }
+
+    }
+    return counter;
+}
+let spaceCount1 = spaceCount("Revision is the mother of success");
+console.log(`total Spaces are:${spaceCount1}`);
+
+let spaceCount2 = spaceCount("JavaScript is the language of internet world");
+console.log(`total Spaces are:${spaceCount2}`);
+
+
