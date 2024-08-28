@@ -4,7 +4,7 @@ console.log("=============1=============");
 console.log(fruits);
 fruits[0];
 let result = fruits[fruits.length - 1];
-console.log(`The first elelment is : ${fruits[0]} and last elements is :${result}`);
+console.log(`The first element is : ${fruits[0]} and last elements is :${result}`);
 
 console.log("=============2================");
 

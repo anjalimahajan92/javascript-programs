@@ -185,4 +185,56 @@ console.log(`total Spaces are:${spaceCount1}`);
 let spaceCount2 = spaceCount("JavaScript is the language of internet world");
 console.log(`total Spaces are:${spaceCount2}`);
 
+console.log("===10=====");
 
+let str = "Banana";  // a - 3, n - 2
+let finalOutput = {};
+for (let index = 0; index < str.length; index++) {
+    const element = str.charAt(index);
+    let count = 0;
+    for (let j = 0; j < str.length; j++) {
+        const char = str.charAt(j);
+        if (char==element) {
+            count++;     
+        }
+    }
+    // console.log(element, count);
+    if (count>1) {
+        finalOutput[element] = count;
+    }  
+}
+// console.log(finalOutput);
+for (const key in finalOutput) {
+    const element = finalOutput[key];
+    console.log(`${key} - ${element}`);
+    
+}
+
+console.log("===========10  =====");
+function duplicate(params) {
+let mainOp={};
+ for (let index = 0; index < params.length; index++) {
+    const elements = params.charAt(index);
+    let count=0;
+    for (let j =0; j < params.length;j++) {
+  let char= params.charAt(j)
+        if(char==elements){
+            count++;
+        }
+    }
+    if(count>1){
+        mainOp[elements]=count;
+    }
+
+ }
+for (const key in mainOp) {
+   
+        const result = mainOp[key];
+        console.log(`${key}-${result}`);
+        
+    }
+}
+    
+duplicate("Banana");
+duplicate("Apple");
+duplicate("Software Developer");

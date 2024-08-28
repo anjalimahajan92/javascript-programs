@@ -31,7 +31,7 @@ console.log("===================3============");
 //=========3=======//
 function wordLength(word)
 {
-console.log(word);
+    console.log(word);
     var res=word.length;
     var result=res%2==0?true:false;
     console.log(`The word length is even ${result}`);
