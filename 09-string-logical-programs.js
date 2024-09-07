@@ -164,51 +164,9 @@ WordCount("Beyound frameworks,Beyound imagination");
 WordCount("I am passionate software developer");
 
 
-console.log("=====11)space count in string====");
 
-function spaceCount(key) {
-    console.log(key);
-    let counter = 0;
-    for (let index = 0; index < key.length; index++) {
 
-        let keyChar = key.charAt(index);
-        if (keyChar == " ") {
-            counter++;
-        }
 
-    }
-    return counter;
-}
-let spaceCount1 = spaceCount("Revision is the mother of success");
-console.log(`total Spaces are:${spaceCount1}`);
-
-let spaceCount2 = spaceCount("JavaScript is the language of internet world");
-console.log(`total Spaces are:${spaceCount2}`);
-
-console.log("===10=====");
-
-let str = "Banana";  // a - 3, n - 2
-let finalOutput = {};
-for (let index = 0; index < str.length; index++) {
-    const element = str.charAt(index);
-    let count = 0;
-    for (let j = 0; j < str.length; j++) {
-        const char = str.charAt(j);
-        if (char==element) {
-            count++;     
-        }
-    }
-    // console.log(element, count);
-    if (count>1) {
-        finalOutput[element] = count;
-    }  
-}
-// console.log(finalOutput);
-for (const key in finalOutput) {
-    const element = finalOutput[key];
-    console.log(`${key} - ${element}`);
-    
-}
 
 console.log("===========10  =====");
 function duplicate(params) {
@@ -238,3 +196,143 @@ for (const key in mainOp) {
 duplicate("Banana");
 duplicate("Apple");
 duplicate("Software Developer");
+
+console.log("=====11) check string is palindrom====");
+function isPalindrome(n1) {
+    let newResult = n1.split("").reverse().join("");
+    if (n1 == newResult) {
+        return true;
+    }
+    else {
+        return false;
+    }
+
+}
+let stringShow1 = isPalindrome("madam");
+console.log(`String "madam" ispalindrom:${stringShow1}`);
+
+let stringShow2 = isPalindrome("banana");
+console.log(`String "banana" ispalindrom:${stringShow2}`);
+let stringShow3 = isPalindrome("radar");
+console.log(`String "radar" ispalindrom:${stringShow3}`);
+let stringShow4 = isPalindrome("civil");
+console.log(`String "civil" ispalindrom:${stringShow4}`);
+let stringShow5 = isPalindrome("noon");
+console.log(`String "noon" ispalindrom:${stringShow5}`);
+let stringShow6 = isPalindrome("stats");
+console.log(`String "starts" ispalindrom:${stringShow6}`);
+
+
+
+console.log("=========12)  is Anagram========");
+function isAnagram(str1, params2) {
+    let result2 = str1.split("").sort().join("");
+    let result3 = params2.split("").sort().join("");
+    if (result2 == result3) {
+        return true;
+    }
+    return false;
+}
+let resultShow1 = isAnagram("listen", "silent");
+console.log(`String "listen","silent" are Anagram :${resultShow1}`);
+
+let resultShow2 = isAnagram("heart", "earth");
+console.log(`String "heart","earth" are Anagram :${resultShow2}`);
+let resultShow3 = isAnagram("debit card", "credit card");
+console.log(`String "debit card","credit card" are Anagram :${resultShow3}`);
+
+
+
+console.log("===13)Remove character from string=======");
+function remove(str1) {
+    
+    
+ let newstr1= str1.split("");
+ let newArray= newstr1.splice(4,1,);
+
+ let result=newstr1.join("");
+ console.log(result);
+ 
+ 
+ 
+}
+remove("Java@script");
+remove("softyware");
+remove("code mind")
+
+console.log("==14===============");
+function reverserWord(s1) {
+    let WordCount = s1.split("").reverse().join("");
+    return WordCount;
+
+}
+
+let result7 = reverserWord("Arise!Awake! and stop not until the goal is reached");
+console.log(result7);
+
+let result8 = reverserWord("Learn with us,Job with us");
+console.log(result8);
+
+
+
+console.log("====15) Swapping String============");
+function swapWords() {
+    let wordOne = "Angular";
+    let wordTwo = "React";
+    [wordOne, wordTwo] = [wordTwo, wordOne]
+    console.log(`After swapping`);
+    console.log(`WordOne is :${wordOne}`);
+    console.log(`WordOne is :${wordTwo}`);
+
+}
+swapWords();
+
+console.log("=====16) count spaces=============");
+function spaceCount(key) {
+    console.log(key);
+    let counter = 0;
+    for (let index = 0; index < key.length; index++) {
+
+        let keyChar = key.charAt(index);
+        if (keyChar == " ") {
+            counter++;
+        }
+
+    }
+    return counter;
+}
+let spaceCount1 = spaceCount("Revision is the mother of success");
+console.log(`total Spaces are:${spaceCount1}`);
+
+let spaceCount2 = spaceCount("JavaScript is the language of internet world");
+console.log(`total Spaces are:${spaceCount2}`);
+
+
+console.log("========18)Program to count consonants")
+function consonantsCount(args) {
+
+    let count = 0;
+    for (let index = 0; index < args.length; index++) {
+        let char = args.charAt(index).toLowerCase();
+        if (char >= 'a' && char <= 'z' && !'aeiou'.includes(char))
+            count++;
+    }
+    return count;
+}
+let resultCount1 = consonantsCount("JavaScript");
+console.log(`Number of consonents is:${resultCount1}`);
+
+let resultCount2 = consonantsCount("HTML and CSS");
+console.log(`Number of consonents is:${resultCount2}`);
+
+let resultCount3 = consonantsCount("Language of Internet");
+console.log(`Number of consonents is:${resultCount3}`);
+
+let resultCount4 = consonantsCount("I am UI Developer");
+console.log(`Number of consonents is:${resultCount4}`);
+
+let resultCount5 = consonantsCount("Do or Die");
+console.log(`Number of consonents is:${resultCount5}`);
+
+
+console.log();
