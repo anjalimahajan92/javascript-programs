@@ -83,4 +83,33 @@ var person = {
 };
 var { FirstName, LastName } = person;
 console.log(FirstName, LastName);
- 
+
+
+console.log("=11)How to convert Object{} of key-value pair in javascript===");
+const obj = {
+    "key1": "value1",
+    "key2": "value2",
+    "key3": "value3"
+};
+const entriess = Object.keys(obj).map(key => [key, obj[key]]);
+console.log(entriess);
+
+console.log("==12)How to check if a value is object like in js===");
+function isObjectLike(value) {
+    return typeof value === 'object' && value !==null;
+
+}
+console.log(isObjectLike({}));
+console.log(isObjectLike([]));
+console.log(isObjectLike(null));
+console.log(isObjectLike(42));
+console.log(isObjectLike('string'));
+
+console.log("==13)How to use variable for a key in javascript object literals==");
+let key1='name';
+let value1='john Doe';
+
+let object={
+    [key1]:value1
+}
+console.log(object);
